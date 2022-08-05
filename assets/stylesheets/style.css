@@ -9,11 +9,11 @@
     font-family: Poppins;
 }
 
-.indexBody{
+#indexBody{
     background-color: rgb(247,245,238);
 }
 
-.indexHeader{
+#indexHeader{
     background-color: rgb(247,245,238);
     display: flex;
     align-items: center;
@@ -34,12 +34,11 @@
     align-items: center;
 }
 
-
 .menu ul{
     list-style: none;
     display: flex;
     justify-content: space-between;
-    width: 90%;
+    width: 70%;
     align-items: center;
     margin-right: 10%;
     font-weight: 200;
@@ -58,10 +57,10 @@
 .fa{
     font-size: 30pt;
     margin-right: 5%;
-    color: rgb(175, 165, 165);
+    color: rgb(197, 193, 193);
 }
 
-.indexMain{
+#indexMain{
     background-color: rgb(247,245,238);
     min-width: 80%;
     display: flex;
@@ -220,9 +219,6 @@
 
 .rightOuter div textarea{
     width: 100%;
-    height: 150px;
-    font-family: poppins;
-    padding: 10px;
 }
 
 #submitBtn{
@@ -243,7 +239,7 @@
     margin-top: 10px;
 }
 
-.indexFooter{
+#indexFooter{
     margin: 50px 0px;
     background-color: rgb(247,245,238);
     display: flex;
