@@ -9,11 +9,11 @@
     font-family: Poppins;
 }
 
-#indexBody{
+.indexBody{
     background-color: rgb(247,245,238);
 }
 
-#indexHeader{
+.indexHeader{
     background-color: rgb(247,245,238);
     display: flex;
     align-items: center;
@@ -60,7 +60,7 @@
     color: rgb(197, 193, 193);
 }
 
-#indexMain{
+.indexMain{
     background-color: rgb(247,245,238);
     min-width: 80%;
     display: flex;
@@ -239,7 +239,7 @@
     margin-top: 10px;
 }
 
-#indexFooter{
+.indexFooter{
     margin: 50px 0px;
     background-color: rgb(247,245,238);
     display: flex;
@@ -248,7 +248,7 @@
     flex-direction: column;
 }
 
-#indexFooter h2, h4{
+.indexFooter h2, h4{
     font-weight: 300;
 }
 
