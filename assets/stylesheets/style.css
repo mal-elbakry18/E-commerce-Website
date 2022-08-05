@@ -251,3 +251,186 @@
 #indexFooter h2, h4{
     font-weight: 300;
 }
+
+/*  Shop page   */
+
+.product{
+    cursor: pointer;
+    
+}
+
+.product h3{
+    font-size: 12pt;
+    font-weight: 200;
+}
+
+.product img{
+    transition: 0.3s all;
+}
+
+.product:hover img{
+    opacity: 0.7;
+}
+
+.product .QuickView{
+    background: rgb(237, 232, 228);
+    transform: translateY(20px);
+    opacity: 0;
+    transition: 0.3s all;
+
+}
+
+.product:hover .QuickView{
+    transform: translateY(0);
+    opacity: 1;
+}
+.btn{
+    font-size: 1rem;
+    font-weight: 100;
+    background-color: rgb(237, 232, 228);
+    color:#1d1d1d;
+    padding: 13px 95px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: 0.3s ease;
+}
+
+.btn:hover{
+    background-color: rgb(237, 232, 228);
+    
+}
+
+.star{
+    padding: 10px 0;
+}
+
+.star i{
+    font-size: 0.8rem;
+}
+
+.center{
+    margin-top: 70px ;
+    margin-left: 120px;
+}
+
+.small-container{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    width: 88vw;
+    margin: auto;
+    padding: 2px;
+    align-items: center;
+    justify-content: center;
+}
+
+.policies{
+    display: flex;
+    margin-top: 60px;
+    margin-left: 60px;
+    width: 50%;
+    height: 550px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+    margin-bottom: 50px;
+    background-color: #f1ebdd;
+    color: rgb(97, 96, 87);
+}
+
+
+.policies h1{
+    margin-bottom: 20px;
+    font-size: 40px;
+    font-weight: 400;
+}
+
+#policiesBody{
+    background-color: rgb(247,245,238);
+}
+
+.para{
+    width: 70%;
+}
+
+.parag{
+    font-size: 13px;
+    font-weight: 150;
+    line-height: 2;
+    color: #171717;
+}
+
+.policyI img{
+    width: 89.5%;
+    align-items: center;
+    margin-top: 60px;
+    margin-left: 40px;
+
+}
+
+.policy{
+    display: flex;
+    align-content: center;
+}
+
+.lowerSection{
+    background-color: rgb(97, 96, 87);
+    color: #f1ebdd;
+    text-align: center;
+    padding: 70px 0;
+}
+
+.lowerSection p{
+    width: 50%;
+    text-align: center;
+    margin: auto;
+    padding: 10px;
+    line-height: 2;
+    letter-spacing: 1px;
+    font-size: 15px;
+}
+
+.lowerSection h1{
+    font-weight: 300;
+    font-size: 40px;
+}
+
+.lowerSection h5{
+    padding: 10px;
+    font-size: 15px;
+    font-weight: 100;
+    letter-spacing: 2px;
+}
+
+.shipPolicy{
+    margin-top: 20px;
+}
+
+.shipPolicy i{
+    margin-bottom: 20px;
+}
+
+.btn1{
+    cursor: pointer;
+    color: #f1ebdd;
+    border: 1px solid #f1ebdd;
+    margin-top: 15px;
+    background: rgb(97, 96, 87);
+    padding: 13px 20px;
+}
+
+.btn1:hover{
+    color: rgb(97, 96, 87);
+    background: #f1ebdd;
+}
+
+
+.h1mar{
+    margin-top: 25px;
+}
+
+.imar{
+    margin-top: 75px;
+}
