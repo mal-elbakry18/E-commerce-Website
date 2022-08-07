@@ -434,3 +434,38 @@
 .imar{
     margin-top: 75px;
 }
+
+.about{
+    display: flex;
+    margin-top: 60px;
+    margin-left: 60px;
+    width: 50%;
+    height: 600px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+    margin-bottom: 50px;
+    background-color: #f1ebdd;
+    color: rgb(97, 96, 87);
+}
+
+.about h1{
+    margin-bottom: 20px;
+    font-size: 40px;
+    font-weight: 400;
+}
+
+.aboutI img{
+    width: 80.5%;
+    align-items: center;
+    margin-top: 60px;
+    margin-left: 40px;
+
+}
+
+#aboutBody{
+    background-color: rgb(247,245,238);
+}
+
