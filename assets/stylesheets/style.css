@@ -30,7 +30,7 @@
 .menu{
     display: flex;
     justify-content: space-between;
-    width: 40%;
+    width: 60%;
     align-items: center;
 }
 
@@ -38,7 +38,7 @@
     list-style: none;
     display: flex;
     justify-content: space-between;
-    width: 70%;
+    width: 100%;
     align-items: center;
     margin-right: 10%;
     font-weight: 200;
@@ -131,11 +131,6 @@
     font-weight: 200;
 }
 
-.aboutContainer{
-    inline-size: 100%;
-    display: grid;
-    grid-auto-flow: column;
-}
 
 .AboutContainer{
     background-color: rgb(97,96,87);
@@ -153,7 +148,7 @@
     margin-bottom: 50px;
 }
 
-.center{
+.jcenter{
     width: 40%;
 }
 
