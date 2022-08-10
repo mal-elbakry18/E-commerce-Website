@@ -265,6 +265,7 @@
 
 .product:hover img{
     opacity: 0.7;
+    
 }
 
 .product .QuickView{
@@ -317,6 +318,11 @@
     padding: 2px;
     align-items: center;
     justify-content: center;
+}
+
+.small-container img{
+    width: 290px;
+    height: 290px;
 }
 
 .policies{
@@ -463,4 +469,11 @@
 #aboutBody{
     background-color: rgb(247,245,238);
 }
+
+.Scenter{
+    justify-content: center;
+    align-content: center;
+    margin-top: 50px;
+}
+
 
