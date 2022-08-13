@@ -476,4 +476,186 @@
     margin-top: 50px;
 }
 
+/* product page */
+
+.Ppage{
+    display: flex;
+    width: 1000px;
+    margin: 150px auto;
+}
+
+.url{
+    display: flex;
+    position: relative;
+    transform: translate(16.5rem,5rem);
+    font-size: 20px;
+}
+
+.url a{
+    cursor: pointer;
+    color: rgb(97, 96, 87);
+    text-decoration: none;
+} 
+.url p{
+    margin: 0 1rem;
+    color: rgb(144, 143, 132) ;
+} 
+
+
+.product-details{
+    width: 50%;
+}
+
+.main-img{
+    width: 500px;
+}
+
+.main-img img{
+    width: inherit;
+    border: 1px solid rgb(144, 143, 132);
+}
+
+.images{
+    display: flex;
+    justify-content: flex-start ;
+    width: 100%;
+    margin-top: 15px;
+}
+
+.other-img{
+    width: 60px;
+    margin-left: 20px;
+}
+
+.other-img img{
+    width: inherit;
+    cursor: pointer;
+    border: 1px solid rgb(144, 143, 132);
+    transition: all 0.3s ease;
+}
+
+.other-img:hover img{
+    opacity: 0.5;
+}
+
+.other-img:checked img{
+    border: 2px solid rgb(74, 25, 178) ;
+}
+
+.description{
+    margin: 15px 15px ;
+    font-size: 15px;
+    font-weight: 100;
+}
+
+.right-details{
+    margin: 0 50px;
+}
+
+.product-name{
+    font-size: 1.5rem;
+    font-weight: 100;
+    color: rgb(97, 96, 87);
+}
+
+.product-size{
+    margin-top: 30px;
+    display: flex;
+}
+
+.product-size p{
+    font-size: 0.9rem;
+    color: rgb(97, 96, 87);
+}
+
+.size-radio-btn{
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    font-size: 15px;
+    border: 1px solid rgb(97, 96, 87);
+    border-radius: 50%;
+    margin: 25px;
+    margin-left: 0;
+    line-height: 60px;
+    text-transform: uppercase;
+    color: rgb(97, 96, 87);
+    cursor: pointer;
+}
+
+
+.product-size input[type="radio"]:checked + label{
+    background: rgb(97, 96, 87);
+    color: #fff;
+} 
+
+
+.product-quantity{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.product-quantity p{
+    font-size: 0.9rem;
+    color: rgb(97, 96, 87);
+}
+
+.product-quantity input{
+    margin-top: 10px;
+    border: 1px solid rgb(144, 143, 132);
+    width: 70px;
+    height: 40px;
+    font-size: 15px;
+    font-weight: 100;
+    text-align: center;
+}
+
+.add-btn{
+    margin-top: 30px;
+}
+
+.add-btn button{
+    cursor: pointer;
+    width: 100%;
+    height: 3rem;
+    color: #fff;
+    background-color: rgb(97, 96, 87) ;
+    transition: all 0.3s ease;
+}
+
+.add-btn:hover button{
+    opacity: 0.7;
+}
+
+.product-color{
+    margin-top: 30px;
+    display: flex;
+}
+
+.product-color p{
+    font-size: 0.9rem;
+    color: rgb(97, 96, 87);
+}
+
+.Pcolor{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border: 1px solid rgb(97, 96, 87);
+    border-radius: 50%;
+    margin: 25px;
+    margin-left: 0;
+    cursor: pointer;
+}
+.product-color  input[type="radio"]:checked + label{
+    border: 3px solid #000;
+    transform: scale(0.8);
+}
+
+
+
+
+
 
