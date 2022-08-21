@@ -4,12 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>E-commerce Store - Home</title>
     <link rel="stylesheet" 
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
     <link rel="stylesheet" href="/assets/stylesheets/style.css">
+
+    <link rel="stylesheet" href="/assets/stylesheets/stylePhone.css">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
+
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;1,200&family=Recursive:wght@300&family=Roboto:wght@300&family=Tillana:wght@600&display=swap" rel="stylesheet">
 </head>
 <body class="indexBody">
@@ -25,7 +31,27 @@
                 <li><a href="contact.html">Contact</a></li>
                 <li><a href="about.html">About</a></li>
                 <li>
-                    <i class="fa fa-user-circle" aria-hidden="true"></i>
+                    <i class="fa fa-user-circle" id="userIcon" aria-hidden="true" data-Icon>
+                        <div class="userBar" id="userBar" data-Bar>
+                            <div class="userBarMenu fpoppins" data-Bar>
+                                <div class="menuLeft">
+                                    <a href="login.html" class="menuTags fpoppins">Login</a>
+                                    <a href="cart.html" class="menuTags fpoppins">Cart</a>
+                                    <a href="myOrders.html" class="menuTags fpoppins">My Orders</a>
+                                    <a href="favourites.html" class="menuTags fpoppins">Favorites</a>
+                                </div>
+                                <div class="menuRight">
+                                    <i class="fa fa-sign-in" aria-hidden="true"></i>
+                                    <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                                    <i class="fas fa-box    "></i>
+                                    <i class="fa fa-heart" aria-hidden="true"></i>
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </i>
+                    
                 </li>
             </ul>
            
@@ -34,41 +60,61 @@
     </header>
 
     <main class="indexMain">
-        <div class="picContainer">
-            <img class="image" src="assets/pics/bg.webp" alt="pic">
-            <div class="text">
-                <h1 class="fpoppins">Check US Out</h1>
-                <button class="fpoppins shop">Shop Now</button>
+        
+        <div class="categoriesExplorer">
+            <div class="mens categoriesPicContainer">
+                <a href="mens.html">
+                    <img src="assets/pics/mens2.jpg" alt="mens section" class="catpic">
+                    <div class="textcont">
+                        <h2 class="fpoppins">SHOP MEN'S</h2>
+                        <i class="fa fa-arrow-right" aria-hidden="true"></i>        
+                    </div>                                   
+                </a>
+            </div>
+            <div class="womens categoriesPicContainer">
+                <a href="">
+                    <img src="assets/pics/womens.jpg" alt="" class="catpic">
+                    <div class="textcont">
+                        <h2 class="fpoppins">SHOP WOMEN'S</h2>
+                        <i class="fa fa-arrow-right" aria-hidden="true"></i>        
+                    </div>
+                 </a>
             </div>
         </div>
 
         <div class="products snaps-inline">
             <div class="container fpoppins">
+                <div class="bestsellertag">best seller</div>
                 <img src="/assets/pics/product.webp" alt="I Am A Product">
                 <h3>I'm a product</h3>
                 <h4>EGP 85.00</h4>
             </div>
             <div class="container fpoppins">
+                <div class="bestsellertag">best seller</div>
                 <img src="/assets/pics/product.webp" alt="I Am A Product">
                 <h3>I'm a product</h3>
                 <h4>EGP 85.00</h4>
             </div>
             <div class="container fpoppins">
+                <div class="bestsellertag">best seller</div>
                 <img src="/assets/pics/product.webp" alt="I Am A Product">
                 <h3>I'm a product</h3>
                 <h4>EGP 85.00</h4>
             </div>
             <div class="container fpoppins">
+                <div class="bestsellertag">best seller</div>
                 <img src="/assets/pics/product.webp" alt="I Am A Product">
                 <h3>I'm a product</h3>
                 <h4>EGP 85.00</h4>
             </div>
             <div class="container fpoppins">
+                <div class="bestsellertag">best seller</div>
                 <img src="/assets/pics/product.webp" alt="I Am A Product">
                 <h3>I'm a product</h3>
                 <h4>EGP 85.00</h4>
             </div>
             <div class="container fpoppins">
+                <div class="bestsellertag">best seller</div>
                 <img src="/assets/pics/product.webp" alt="I Am A Product">
                 <h3>I'm a product</h3>
                 <h4>EGP 85.00</h4>
@@ -115,5 +161,8 @@
         <h2 class="fpoppins">E-COMMERCE STORE</h2>
         <h4 class="fpoppins">info@mysite.com</h4>
     </footer>
+
+    <script src="/assets/scripts/indexScript.js"></script>
+
 </body>
 </html>
