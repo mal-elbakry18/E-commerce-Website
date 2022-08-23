@@ -17,19 +17,43 @@
 <body>
     <header class="indexHeader">
         <div class="logo fpoppins">
-            E-commerce Store
-         </div>
-         <div class="menu fpoppins">
-             <ul>
-                 <li><a href="index.html">Home</a></li>
-                 <li><a href="shop.html">Shop</a></li>
-                 <li><a href="policies.html">Shop Policies</a></li>
-                 <li><a href="contact.html">Contact</a></li>
-                 <li><a href="about.html">About</a></li>
-             </ul>
-             <i class="fa fa-user-circle" aria-hidden="true"></i>
-         </div>
-    
+           E-commerce Store
+        </div>
+        <div class="menu fpoppins">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="policies.html">Policies</a></li>                
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="about.html">About</a></li>
+                <li>
+                    <i class="fa fa-user-circle" id="userIcon" aria-hidden="true" data-Icon>
+                        <div class="userBar" id="userBar" data-Bar>
+                            <div class="userBarMenu fpoppins" data-Bar>
+                                <div class="menuLeft">
+                                    <a href="login.html" class="menuTags fpoppins">Login</a>
+                                    <a href="cart.html" class="menuTags fpoppins">Cart</a>
+                                    <a href="myOrders.html" class="menuTags fpoppins">My Orders</a>
+                                    <a href="favourites.html" class="menuTags fpoppins">Favorites</a>
+                                </div>
+                                <div class="menuRight">
+                                    <i class="fa fa-sign-in" aria-hidden="true"></i>
+                                    <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                                    <i class="fas fa-box    "></i>
+                                    <i class="fa fa-heart" aria-hidden="true"></i>
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </i>
+                    
+                </li>
+                <li class="cartI"><a href="cart.html"><i class="fa-solid fa-bag-shopping fa-2x cart-icon"><span>0</span></i></a></li>
+            </ul>
+           
+            
+        </div>
     </header>
 
 
@@ -127,10 +151,10 @@
     </div>
 
 
-    <script src="/assets/scripts/script.js">
+    <script src="/assets/scripts/ProductScript.js">
         
     </script>
-
+  <script src="/assets/scripts/cart.js"></script>
 
 </body>
 

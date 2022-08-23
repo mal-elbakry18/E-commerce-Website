@@ -230,7 +230,7 @@ div ul li .black:hover{
         polygon(0 0,100% 0,100% calc(100% - var(--f)),calc(100% - var(--f)) 100%,
         calc(100% - var(--f)) calc(100% - var(--f)),0 calc(100% - var(--f)),
         var(--r) calc(50% - var(--f)/2));
-    background: #1b1bc9;
+    background: #c91b1b;
     box-shadow: 0 calc(-1*var(--f)) 0 inset #0005; 
 }
 
@@ -369,6 +369,7 @@ div ul li .black:hover{
     flex-direction: column;
 }
 
+
 .indexFooter h2, h4{
     font-weight: 300;
 }
@@ -406,11 +407,17 @@ div ul li .black:hover{
     transform: translateY(0);
     opacity: 1;
 }
+
+.product a{
+    text-decoration: none;
+    color: #000;
+}
+
 .btn{
     font-size: 1rem;
     font-weight: 100;
-    background-color: rgb(237, 232, 228);
-    color:#1d1d1d;
+    background-color: #f1ebdd;
+    color:rgb(97,96,87);
     padding: 13px 95px;
     cursor: pointer;
     text-transform: uppercase;
@@ -418,8 +425,8 @@ div ul li .black:hover{
 }
 
 .btn:hover{
-    background-color: rgb(237, 232, 228);
-    
+    background-color: rgb(97,96,87);
+    color: #f1ebdd;
 }
 
 .star{
@@ -546,6 +553,7 @@ div ul li .black:hover{
     margin-top: 15px;
     background: rgb(97, 96, 87);
     padding: 13px 20px;
+    transition: all 0.3s ease;
 }
 
 .btn1:hover{
@@ -780,11 +788,6 @@ div ul li .black:hover{
     transform: scale(0.8);
 }
 
-
-
-
-
-
 @media only screen 
   and (min-device-width: 320px) 
   and (max-device-width: 480px)
@@ -818,4 +821,161 @@ div ul li .black:hover{
         width: 100vw;
     }
 
+}
+/* cart icon */
+.cartI{
+    border: 1px solid rgb(97,96,87);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.cart-icon{
+    color:rgb(97, 96, 87);
+}
+
+.cart-icon span{
+    font-size: small;
+    margin-left: 10px;
+}
+/* who we are (home page) */
+.indexAbout{
+    display: flex;
+    margin-top: 60px;
+    margin-left: 60px;
+    width: 50%;
+    height: 600px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+    margin-bottom: 50px;
+    background-color: rgb(97,96,87);
+    color:  #f1ebdd;
+    font-size: 13px;
+    font-weight: 150;
+    line-height: 2;
+}
+
+.indexAbout h1{
+    margin-bottom: 20px;
+    font-size: 40px;
+    font-weight: 400;
+}
+
+
+/* cart page */
+
+
+.cart-container{
+    max-width: 1200px;
+    justify-content: space-around;
+    margin: 0 auto;
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-bottom: 100px;
+}
+
+.addedProducts{
+    width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cartInfo{
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: flex-start;
+    margin: 0 auto;
+    border-bottom: 3px solid rgb(97,96,87);
+}
+
+.cartInfo h5{
+    color: rgb(97,96,87);
+}
+
+.title{
+    width: 45%;
+}
+
+.cart-price{
+    width: 15%;
+    display: flex;
+    align-items: center;
+}
+
+.quantity{
+    width: 30%;
+    display: flex;
+    align-items: center;
+}
+
+.bord{
+    border-bottom: 1px solid rgb(97,96,87) ;
+}
+
+.quantity span{
+    font-size: 25px;
+}
+
+.total{
+    width: 10%;
+    display: flex;
+    align-items: center;
+}
+
+.addProduct{
+    width: 45%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid rgb(97,96,87);
+}
+
+.addProduct img{
+    max-width: 40%;
+}
+
+.addProduct i{
+    color: rgb(97,96,87);
+    font-size: 25px;
+    margin-left: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.cartTotal-container{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    padding: 10px 0;
+}
+
+.cartTotal-title{
+    width: 30%;
+}
+
+.cartTotal{
+    width: 10%;
+}
+
+.emptyCart{
+    width: 1200px;
+    height: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    flex-wrap: wrap;
+    color: rgb(97,96,87);
+}
+
+.emptyCart h1{
+    margin: 25px 25px;
 }
