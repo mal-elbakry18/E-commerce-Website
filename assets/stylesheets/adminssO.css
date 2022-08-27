@@ -1,0 +1,81 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin:0 ;
+}
+
+.boardersList{
+   width:200px;
+    height:200px;
+   margin-left: 10px;
+    margin-right: 50px;
+    margin-bottom: 20px;
+    margin-top: 40px ;
+    background: #a4a2a4;
+    display:inline-block;
+    text-align: left;
+    padding: 20px 20px 20px 20px;
+
+}
+
+.leftMenuBar{
+    display:inline-block;
+    margin-right: 150px;
+    margin-bottom: 50px;
+
+    background: #d2cfd2;
+    padding: 250px 40px 450px 10px;
+    /*float:left;*/
+}
+
+.footerBar{
+   margin-top: 50px;
+    background: #d2cfd2;
+    padding: 30px;
+    overflow: hidden;
+}
+.footerBarPhoto{
+    margin:10px;
+
+
+}
+#topMenuBar{
+    margin-left: 300px;
+
+
+}
+.titleAdmin{
+    margin-left: 260px;
+}
+.headerMenuBar{
+   background: #d2cfd2;
+    padding: 3px;
+    /*position: fixed;*/
+   /* border:#d2cfd2 10px solid;*/
+
+}
+ul li{
+    list-style: none;
+    horiz-align: center;
+
+}
+header >*{
+    display:inline-block;
+
+}
+footer >div{
+    display:inline-block;
+}
+.leftMenuBar div ul li a:hover{
+    color: white;
+    background: #7a7979;
+    text-decoration-line: underline;
+}
+.circleAdmin{
+    border-radius: 5px;
+}
+.mainTazbet{
+    background: black;
+ margin-top: 60px;
+    /*box-shadow: 10px 10px 0px 0px  black;*/
+}
