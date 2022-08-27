@@ -48,13 +48,15 @@
     margin-left: 260px;
 
 }
-.headerMenuBar{
-   background: #d2cfd2;
+.headerMenuBar {
+    background: #d2cfd2;
     padding: 30px;
     /*position: fixed;*/
-   /* border:#d2cfd2 10px solid;*/
+    /* border:#d2cfd2 10px solid;*/
+
 
 }
+
 ul li{
     list-style: none;
     horiz-align: center;
