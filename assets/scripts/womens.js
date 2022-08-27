@@ -80,8 +80,8 @@ function showWomens(){
                 <i class="fa-solid fa-star"></i>
                 <i class="fa-solid fa-star"></i>
             </div>
-            <h3>${products[0].tag}</h3>
-            <h4>EGP ${products[0].price}</h4>
+            <h3>${products[i].name}</h3>
+            <h4>EGP $${products[i].price}.00</h4>
             <button class="QuickView btn addToCart">Add To Cart</button>
         </div>`
         }
