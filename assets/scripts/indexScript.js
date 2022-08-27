@@ -1,10 +1,6 @@
-const userIcon = document.getElementById('userIcon');
-const userBar = document.getElementById('userBar');
+const bestSellerContainer = document.getElementsByClassName('bestSellerproducts')[0]
+const scrollRight = document.getElementsByClassName('container')[0]
 
-userIcon.addEventListener('click', function(){
-    userBar.style.opacity = '1';
-    
-})
 
 document.addEventListener('click', e => {
     const isIcon = e.target.matches('[data-Icon]');
@@ -12,3 +8,14 @@ document.addEventListener('click', e => {
         userBar.style.opacity = '0';
     }
 })
+
+
+setInterval(function(){
+    
+    bestSellerContainer.scrollBy({
+        left: 200,
+        behavior: 'smooth'
+    })
+}, 5000)
+
+

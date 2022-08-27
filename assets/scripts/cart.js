@@ -146,13 +146,13 @@ function displayInCart(){
             <div class="addProduct">
             <i class="fa-solid fa-trash-can"></i>
                 <img src="/assets/pics/${item.tag}.webp">
-                <span>${item.name}</span>
+                <span class="fpoppins">${item.name}</span>
             </div>
-            <div class="cart-price bord">$${item.price}.00</div>
+            <div class="cart-price bord fpoppins">$${item.price}.00</div>
             <div class="quantity bord">
-            <span>${item.count}</span>
+            <span class="fpoppins">${item.count}</span>
             </div>
-            <div class="total bord">
+            <div class="total bord fpoppins">
             $${item.count * item.price}.00
             </div>
             `
