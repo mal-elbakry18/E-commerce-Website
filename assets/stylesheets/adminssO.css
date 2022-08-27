@@ -23,7 +23,7 @@
     margin-right: 150px;
     margin-bottom: 50px;
 
-    background: #d2cfd2;
+   background: #d2cfd2;
     padding: 250px 40px 450px 10px;
     /*float:left;*/
 }
@@ -40,16 +40,17 @@
 
 }
 #topMenuBar{
-    margin-left: 300px;
+    margin-left: 700px;
 
 
 }
 .titleAdmin{
     margin-left: 260px;
+
 }
 .headerMenuBar{
    background: #d2cfd2;
-    padding: 3px;
+    padding: 30px;
     /*position: fixed;*/
    /* border:#d2cfd2 10px solid;*/
 
