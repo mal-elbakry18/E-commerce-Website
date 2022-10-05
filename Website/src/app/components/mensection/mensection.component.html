@@ -1,0 +1,9 @@
+<main>
+    <div class="Scenter menPage">
+        <div class="small-container">
+            <app-featured-product *ngFor = "let item of mensectionProducts"
+        [productName] = "item.name" [productPrice] = "item.price" [productImage] = "item.imageURL"></app-featured-product>  
+        </div>
+
+    </div>
+</main>

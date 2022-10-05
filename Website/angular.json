@@ -23,9 +23,13 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/assets/stylesheets/style.css"
             ],
-            "scripts": []
+            "scripts": [
+              "src/assets/scripts/indexScript.js",
+              "src/assets/scripts/cart.js",
+              "src/assets/scripts/userBarScript.js"
+            ]
           },
           "configurations": {
             "production": {

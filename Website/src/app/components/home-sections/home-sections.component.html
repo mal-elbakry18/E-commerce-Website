@@ -1,0 +1,20 @@
+<section class="menSection">
+    <div class="menTitle fpoppins">
+        <h1>{{sectionName}}</h1>
+    </div>
+
+    <div class="Scenter">
+    <div class="small-container">
+        <app-featured-product *ngFor = "let item of arrayName"
+         [productName] = "item.name" [productPrice] = "item.price" [productImage] = "item.imageURL"></app-featured-product>
+
+        <!-- <app-featured-product productName = "shoes" [productPrice] = "90.00" productImage = "/assets/pics/shoes1.webp"></app-featured-product> -->
+        <!-- <app-featured-product productName = "Glasses" [productPrice] = "225.00" productImage = "/assets/pics/glasses1.webp"></app-featured-product> -->
+        <!-- <app-featured-product productName = "Hoodie" [productPrice] = "100.00" productImage = "/assets/pics/hoodie1.webp"></app-featured-product>    -->
+    </div>
+    </div>
+
+    <div class="seeMore fpoppins">
+        <a href="{{path}}">See More of {{sectionName}}   <i class="fa-solid fa-arrow-right"></i></a>
+    </div>
+</section>
