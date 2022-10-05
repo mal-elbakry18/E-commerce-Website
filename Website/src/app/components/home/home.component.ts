@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { products } from 'src/app/interfaces/products';
 
+
+
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -36,6 +38,7 @@ export class HomeComponent implements OnInit {
     {name : "Plant" , price : 85.00, imageURL : "/assets/pics/plant1.webp"},
     {name : "Watch" , price : 150.00, imageURL : "/assets/pics/watch.webp"},
   ]
+  
   constructor() { }
 
   ngOnInit(): void {

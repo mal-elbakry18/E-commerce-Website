@@ -28,7 +28,8 @@
             "scripts": [
               "src/assets/scripts/indexScript.js",
               "src/assets/scripts/cart.js",
-              "src/assets/scripts/userBarScript.js"
+              "src/assets/scripts/userBarScript.js",
+              "src/assets/scripts/ProductScript.js"
             ]
           },
           "configurations": {

@@ -1,5 +1,5 @@
-const bestSellerContainer = document.getElementsByClassName('bestSellerproducts')[0]
-const scrollRight = document.getElementsByClassName('container')[0]
+const bestSellerContainer = document.querySelector('.bestSellerproducts')[0]
+const scrollRight = document.querySelector('.container')[0]
 
 
 document.addEventListener('click', e => {

@@ -21,6 +21,7 @@ import { CartComponent } from './components/cart/cart.component';
 import { FavoritesProductsComponent } from './components/favorites-products/favorites-products.component';
 import { MensectionComponent } from './components/mensection/mensection.component';
 import { WomensectionComponent } from './components/womensection/womensection.component';
+import { ProductDetailsComponent } from './components/product-details/product-details.component';
 
 @NgModule({
   declarations: [
@@ -42,7 +43,8 @@ import { WomensectionComponent } from './components/womensection/womensection.co
     CartComponent,
     FavoritesProductsComponent,
     MensectionComponent,
-    WomensectionComponent
+    WomensectionComponent,
+    ProductDetailsComponent
   ],
   imports: [
     BrowserModule,

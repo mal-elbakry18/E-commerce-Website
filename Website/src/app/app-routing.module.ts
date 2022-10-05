@@ -10,6 +10,7 @@ import { LoginComponent } from './components/login/login.component';
 import { MensectionComponent } from './components/mensection/mensection.component';
 import { MyordersComponent } from './components/myorders/myorders.component';
 import { PoliciesComponent } from './components/policies/policies.component';
+import { ProductDetailsComponent } from './components/product-details/product-details.component';
 import { ShopComponent } from './components/shop/shop.component';
 import { WomensectionComponent } from './components/womensection/womensection.component';
 
@@ -25,6 +26,7 @@ const routes: Routes = [
   { path: 'cart', component: CartComponent},
   { path: 'menSection', component: MensectionComponent},
   { path: 'womenSection', component: WomensectionComponent},
+  { path: 'product', component: ProductDetailsComponent},
 ];
 
 @NgModule({
