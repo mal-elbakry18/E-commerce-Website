@@ -9,7 +9,6 @@ class ProductController {
     async addProduct(req, res){
         try{
         let data = req.body;
-        console.log(data);
         res.json(await products.create(data));
         }catch(e){
            res.json({message: 'Please choose a unique name'})

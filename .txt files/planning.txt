@@ -9,29 +9,27 @@
        - Update product                                 (done)                                
        - Manage stock                                   (done)
 - Users
-        - Register Admin                                ()
-        - Register Client                               ()
-        - Login                                         ()
-        - Remove User                                   ()
-    - Ban User                                          ()
-    - Client Delivery Info                              ()
-        - Client payment info                           ()
-        - Favorites                                     ()
-        -- Add product                                  ()
-            -- Remove Product                           ()
+        - Register Admin                                (done)
+        - Register Client                               (done)
+        - Login                                         (done)
+        - Remove User                                   (done)
+    - Ban User                                          (done)
+    - Client Delivery Info                              (done)
+        - Favorites              (make model)           (done)
+                -- Add product                          (done)
+                -- Remove Product                       (done)
 - Authentication
         - Admin Privileges
         - Client Privileges
         - Guest Privileges
 - Cart
-        - Add Product
-        - Remove Product
-        - Calc Total
+        - Add Product                                   (done + tested)
+        - Remove Product                                (done + tested)
+        - Calc Total                                    (done + tested)
 - Orders
-        - Payment options
-        - Add payment options (Admin)
-        - Checkout
-- Complaints
-        - Save Complaint
-        - Mark as resolved
+        
+        - Checkout                                      (done)
+- Complaints                                            (done)
+        - Save Complaint                                (done)
+        - Mark as resolved                              (done)
 

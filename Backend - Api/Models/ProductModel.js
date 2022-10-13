@@ -3,9 +3,9 @@ const mongoose = require("mongoose");
 const productSchema = new mongoose.Schema(
   {
     name: { type: String, required: true, unique: true },
-    // tag1: { type: String, required: true },
-    // tag2: { type: String, required: true },
-    // tag3: { type: String, required: true },
+    tag1: { type: String, required: true },
+    tag2: { type: String, required: true },
+    tag3: { type: String, required: true },
     sizesAvailable: {
         type: [String],
         required:false
