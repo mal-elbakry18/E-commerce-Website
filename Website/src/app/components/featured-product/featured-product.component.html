@@ -1,0 +1,15 @@
+<div class="product fpoppins ">
+    <a routerLink="/product">
+    <img src="/assets/pics/{{productImage}}.webp" alt="I Am A Product" >
+    <div class="star">
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+    </div>
+    <h3>{{ productName }}</h3>
+    <h4>EGP {{ productPrice}}</h4>
+    </a>
+    <button class="QuickView btn addToCart" (click)=addtocart(Item)>Add To Cart</button>
+</div>

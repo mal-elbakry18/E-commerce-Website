@@ -1,0 +1,50 @@
+.emptyCart{
+    border: 2px solid rgb(97,96,87);
+}
+
+.addedProducts a{
+    text-decoration: none;
+    text-align: center;
+    background: rgb(97,96,87);
+    color: rgb(247,245,238);
+    margin: 0 auto;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    padding: 10px 10px;
+    border: 2px solid rgb(97,96,87);
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.addedProducts a:hover{
+    background: rgb(247,245,238);
+    color: rgb(97,96,87);
+    border: 2px solid rgb(97,96,87);
+}
+
+.checkOut{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.checkOut button{
+    cursor: pointer;
+    text-align: center;
+    background-color: rgb(97,96,87);
+    color: rgb(247,245,238);
+    margin-bottom: 10px;
+    margin-top: 20px;
+    margin-left: 20px;
+    padding: 10px 10px;
+    width: 20%;
+    border: 2px solid rgb(97,96,87);
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.checkOut button:hover{
+    background: rgb(247,245,238);
+    color: rgb(97,96,87);
+    border: 2px solid rgb(97,96,87);
+}

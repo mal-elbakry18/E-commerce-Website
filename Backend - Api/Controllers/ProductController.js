@@ -22,8 +22,7 @@ class ProductController {
        }
     }
     async viewAll(req, res){
-        try{    
-            console.log('request recieved');    
+        try{        
             res.json(await products.find());
         }
         catch(e){

@@ -1,0 +1,16 @@
+.removefavorites{
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    color:rgb(97,96,87);
+    padding: 10px;
+    width: 300px;
+    margin-top: 5px;
+    align-items: center;
+    font-size: large;
+}
+
+.removefavorites:hover {
+    background: red;
+    color : #fff ;
+}

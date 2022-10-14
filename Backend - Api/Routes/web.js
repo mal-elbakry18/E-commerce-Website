@@ -33,6 +33,7 @@ let orderController = new OrderController();
     webApp.get('/users', usersController.login)
     //activate/Deactivate user
     webApp.put('/users/toggle/:toSearch/:value', usersController.toggleStatus);
+    webApp.get('/users/all', usersController.listUsers);
 
     //FAVORITES
         //add product to favs
