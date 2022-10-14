@@ -15,6 +15,7 @@ import { ShopComponent } from './components/shop/shop.component';
 import { WomensectionComponent } from './components/womensection/womensection.component';
 
 const routes: Routes = [
+  { path: '', redirectTo: '/home', pathMatch: 'full' },
   { path: 'home', component: HomeComponent},
   { path: 'shop', component: ShopComponent},
   { path: 'about', component: AboutComponent},
