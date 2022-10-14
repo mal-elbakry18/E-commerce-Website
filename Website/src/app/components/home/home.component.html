@@ -4,16 +4,16 @@
     <video src="/assets/video/newCollection.mp4" class="welcome-video"  autoplay muted loop></video>
     <div class="newCollection">
         <h1>New<br><span>Collection</span></h1>
-        <a href="/shop">Shop Now</a>
+        <a routerLink="/shop">Shop Now</a>
     </div>
 </section>
 
-<app-home-sections sectionName="Men Section" [arrayName] = "this.menSection" path ="/menSection"></app-home-sections>
+<app-home-sections sectionName="Men Section" [arrayName] = "this.menList" path ="/menSection"></app-home-sections>
 
 <br>
 
 <!-- <app-home-sections sectionName="New products" [arrayName] = "this.newProducts"></app-home-sections> -->
-
+<!-- 
 <section class="menSection">
     <div class="menTitle fpoppins">
         <h1>New Products</h1>
@@ -25,11 +25,11 @@
         [productName] = "item.name" [productPrice] = "item.price" [productImage] = "item.imageURL"></app-featured-product> 
     </div>
     </div>
-</section>
+</section> -->
 
 <br>
 
-<app-home-sections sectionName="Women Section" [arrayName] = "this.womenSection" path ="/womenSection"></app-home-sections>
+<app-home-sections sectionName="Women Section" [arrayName] = "this.womenList" path ="/womenSection"></app-home-sections>
 
 <main class="indexMain">
     <div class="menTitle fpoppins bestseller">

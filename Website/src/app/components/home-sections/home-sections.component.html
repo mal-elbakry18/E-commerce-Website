@@ -6,7 +6,7 @@
     <div class="Scenter">
     <div class="small-container">
         <app-featured-product *ngFor = "let item of arrayName"
-         [productName] = "item.name" [productPrice] = "item.price" [productImage] = "item.imageURL"></app-featured-product>
+         [productName] = "item.name" [productPrice] = "item.price" [productImage] = "item.tag1" [Item] = "item"></app-featured-product>
 
         <!-- <app-featured-product productName = "shoes" [productPrice] = "90.00" productImage = "/assets/pics/shoes1.webp"></app-featured-product> -->
         <!-- <app-featured-product productName = "Glasses" [productPrice] = "225.00" productImage = "/assets/pics/glasses1.webp"></app-featured-product> -->
@@ -15,6 +15,6 @@
     </div>
 
     <div class="seeMore fpoppins">
-        <a href="{{path}}">See More of {{sectionName}}   <i class="fa-solid fa-arrow-right"></i></a>
+        <a routerLink="{{path}}">See More of {{sectionName}}   <i class="fa-solid fa-arrow-right"></i></a>
     </div>
 </section>

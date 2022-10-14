@@ -22,6 +22,9 @@ import { FavoritesProductsComponent } from './components/favorites-products/favo
 import { MensectionComponent } from './components/mensection/mensection.component';
 import { WomensectionComponent } from './components/womensection/womensection.component';
 import { ProductDetailsComponent } from './components/product-details/product-details.component';
+import { HttpClientModule } from '@angular/common/http';
+import { FilterPipe } from './shared/filter.pipe';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -44,11 +47,15 @@ import { ProductDetailsComponent } from './components/product-details/product-de
     FavoritesProductsComponent,
     MensectionComponent,
     WomensectionComponent,
-    ProductDetailsComponent
+    ProductDetailsComponent,
+    FilterPipe
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

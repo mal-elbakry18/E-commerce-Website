@@ -6,6 +6,11 @@ const bodyParser = require('body-parser');
 const app = express();
 const PORT = 8080;
 
+
+var cors = require('cors');
+app.use(cors());
+
+
 app.use(bodyParser.json())
 
 app.use('/admin', adminApp);

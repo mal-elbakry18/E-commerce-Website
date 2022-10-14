@@ -4,19 +4,19 @@
     </div>
     <div class="menu fpoppins">
         <ul>
-            <li><a href="/home">Home</a></li>
-            <li><a href="/shop">Shop</a></li>
-            <li><a href="/policies">Policies</a></li>                
-            <li><a href="/contact">Contact</a></li>
-            <li><a href="/about">About</a></li>
+            <li><a routerLink="home">Home</a></li>
+            <li><a routerLink="shop">Shop</a></li>
+            <li><a routerLink="policies">Policies</a></li>                
+            <li><a routerLink="contact">Contact</a></li>
+            <li><a routerLink="about">About</a></li>
             <li>
                 <i class="fa fa-user-circle" id="userIcon" aria-hidden="true" data-Icon>
                     <div class="userBar" id="userBar" data-Bar>
                         <div class="userBarMenu fpoppins" data-Bar>
                             <div class="menuLeft">
-                                <a href="/login" class="menuTags fpoppins">Login</a>
-                                <a href="/myorders" class="menuTags fpoppins">My Orders</a>
-                                <a href="/favorites" class="menuTags fpoppins">Favorites</a>
+                                <a routerLink="login" class="menuTags fpoppins">Login</a>
+                                <a routerLink="myorders" class="menuTags fpoppins">My Orders</a>
+                                <a routerLink="favorites" class="menuTags fpoppins">Favorites</a>
                             </div>
                             <div class="menuRight">
                                 <i class="fa fa-sign-in" aria-hidden="true"></i>
@@ -30,7 +30,7 @@
                 </i>
                 
             </li>
-            <li class="cartI"><a href="/cart"><i class="fa-solid fa-bag-shopping fa-2x cart-icon"><span>0</span></i></a></li>            </ul>
+            <li class="cartI"><a  routerLink="cart"><i class="fa-solid fa-bag-shopping fa-2x cart-icon"><span>{{totalCartItems}}</span></i></a></li>            </ul>
        
 
     </div>

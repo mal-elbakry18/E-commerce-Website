@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { products } from 'src/app/interfaces/products';
+
 
 @Component({
   selector: 'app-home-sections',
@@ -9,7 +9,7 @@ import { products } from 'src/app/interfaces/products';
 export class HomeSectionsComponent implements OnInit {
 
   @Input() sectionName : string = "";
-  @Input() arrayName : Array<products> = [];
+  @Input() arrayName : any = [];
   @Input() path : string = "";
 
   constructor() { }

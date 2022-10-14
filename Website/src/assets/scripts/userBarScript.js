@@ -1,5 +1,5 @@
-const userIcon = document.getElementById('userIcon');
-const userBar = document.getElementById('userBar');
+const userIcon = document.querySelector('#userIcon');
+const userBar = document.querySelector('#userBar');
 
 
 userIcon.addEventListener('click', function(){

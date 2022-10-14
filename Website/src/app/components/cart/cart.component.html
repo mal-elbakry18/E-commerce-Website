@@ -1,19 +1,53 @@
 <main class="indexMain">
-    <div class="cart-container">
-        <div class="cartInfo fpoppins">
-            <h5 class="title">Product</h5>
-            <h5 class="cart-price">Price</h5>
-            <h5 class="quantity">Quantity</h5>
-            <h5 class="total">Total</h5>
-        </div>
+    <ng-container *ngIf="products.length == 0">
         <div class="addedProducts">
             <div class="emptyCart fpoppins">
                 <i class="fa-solid fa-cart-shopping fa-8x"></i>
                 <h1>Your cart is empty</h1>
                 <h4>Looks like you have not added anything to your cart.</h4>
                     <h4>Go ahead & explore our shop.</h4>
+                    <a routerLink="/shop">Shop Now</a>
             </div>
         </div>
-    </div>
+    </ng-container>
+    <ng-container *ngIf="products.length != 0">
+
+        <div class="cart-container">
+            <div class="cartInfo fpoppins">
+                <h5 class="title">Product</h5>
+                <h5 class="cart-price">Price</h5>
+                <h5 class="quantity">Quantity</h5>
+                <h5 class="total">Total</h5>
+            </div>
+            <div class="addedProducts">
+                <ng-container *ngFor="let item of products; let i = index">
+                <div class="addProduct" >
+                    <img src="/assets/pics/{{item.tag1}}.webp">
+                    <span class="fpoppins">{{item.name}}</span>
+                    <button (click)="removeItem(item)"><i class="fa-solid fa-trash-can" ></i></button>  
+                        
+                </div>
+                    <div class="cart-price bord fpoppins">{{item.price}}</div>
+                    <div class="quantity bord">
+                    <span class="fpoppins">{{item.quantity}}</span>
+                    </div>
+                    <div class="total bord fpoppins">
+                    {{item.total}}
+                    </div>
+                </ng-container>
+                
+                <div class="cartTotal-container">
+                    <h3 class="cartTotal-title fpoppins">
+                    Cart Total
+                    </h3>
+                    <h3 class="cartTotal fpoppins">{{grandTotal}}</h3>
+                </div>
+                <div class="checkOut">
+                    <button>Check out</button>
+                    <button (click)="emptycart()">Empty cart</button>
+                </div>
+            </div>
+        </div>
+    </ng-container>
 </main>
 

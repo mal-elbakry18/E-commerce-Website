@@ -950,6 +950,7 @@ div ul li .black:hover{
     width: 1200px;
     display: flex;
     flex-wrap: wrap;
+    margin-bottom: 50px;
 }
 
 .cartInfo{

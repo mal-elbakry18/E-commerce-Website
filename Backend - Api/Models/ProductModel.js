@@ -14,7 +14,7 @@ const productSchema = new mongoose.Schema(
         type: String,
         required:true
     }],
-    price: { type: String },
+    price: { type: Number },
     count: {
       type: Number,
       default: 1,

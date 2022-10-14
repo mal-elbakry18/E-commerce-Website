@@ -1,5 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { products } from 'src/app/interfaces/products';
+import { ApiService } from 'src/app/services/api.service';
+import { HomeComponent } from '../home/home.component';
 
 @Component({
   selector: 'app-mensection',
@@ -8,15 +10,26 @@ import { products } from 'src/app/interfaces/products';
 })
 export class MensectionComponent implements OnInit {
 
-  mensectionProducts : Array<products> = [
-    {name : "shoes" , price : 90.00, imageURL : "/assets/pics/shoes1.webp"},
-    {name : "Glasses" , price : 225.00, imageURL : "/assets/pics/glasses1.webp"},
-    {name : "Hoodie" , price : 100.00, imageURL : "/assets/pics/hoodie1.webp"},
-    {name : "Watch" , price : 150.00, imageURL : "/assets/pics/watch.webp"},
-  ]
-  constructor() { }
+  public productList : any ;
+  public menList : any =[];
+
+  constructor(private api : ApiService) { }
 
   ngOnInit(): void {
+
+    this.api.getProduct()
+    .subscribe(res=>{
+      this.productList = res;
+      this.productList.forEach((a:any) => {
+        if(a.gender === 0){
+          this.menList.push(a);
+          console.log("men");
+        }
+        Object.assign(a,{quantity:1,total:a.price});
+      });
+      console.log(this.productList)
+    });
+
   }
 
 }

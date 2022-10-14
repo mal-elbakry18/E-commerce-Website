@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { products } from 'src/app/interfaces/products';
+import { ApiService } from 'src/app/services/api.service';
 
 @Component({
   selector: 'app-womensection',
@@ -16,9 +17,25 @@ export class WomensectionComponent implements OnInit {
     {name : "Lamp" , price : 235.00, imageURL : "/assets/pics/lamp1.webp"},
   ]
 
-  constructor() { }
+  public productList : any ;
+  public womenList : any =[];
+
+  constructor(private api : ApiService) { }
 
   ngOnInit(): void {
+  
+    this.api.getProduct()
+    .subscribe(res=>{
+      this.productList = res;
+      this.productList.forEach((a:any) => {
+        if(a.gender === 1){
+          this.womenList.push(a);
+        }
+        Object.assign(a,{quantity:1,total:a.price});
+      });
+      console.log(this.productList)
+    });
+  
   }
 
 }

@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { CartService } from 'src/app/services/cart.service';
 
 @Component({
   selector: 'app-featured-product',
@@ -8,11 +9,16 @@ import { Component, Input, OnInit } from '@angular/core';
 export class FeaturedProductComponent implements OnInit {
 
   @Input() productName : string = "";
-  @Input() productPrice : number = 0;
+  @Input() productPrice : Number = 0;
   @Input() productImage : string = "";
-  constructor() { }
+  @Input() Item : any;
+
+  constructor(private cartService : CartService) { }
 
   ngOnInit(): void {
   }
 
+  addtocart(item: any){
+    this.cartService.addtoCart(item);
+  }
 }
