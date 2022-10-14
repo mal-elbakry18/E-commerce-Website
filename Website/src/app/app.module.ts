@@ -25,6 +25,7 @@ import { ProductDetailsComponent } from './components/product-details/product-de
 import { HttpClientModule } from '@angular/common/http';
 import { FilterPipe } from './shared/filter.pipe';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { RegisterComponent } from './components/register/register.component';
 
 @NgModule({
   declarations: [
@@ -48,7 +49,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     MensectionComponent,
     WomensectionComponent,
     ProductDetailsComponent,
-    FilterPipe
+    FilterPipe,
+    RegisterComponent
   ],
   imports: [
     BrowserModule,

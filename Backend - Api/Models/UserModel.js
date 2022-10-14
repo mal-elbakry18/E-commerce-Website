@@ -4,7 +4,7 @@ const { hashPassword } = require("../Controllers/hashPassword");
 
 const userSchema = new mongoose.Schema(
   {
-    username: { type: String, required: true, unique: true },
+    username: { type: String, required: false, unique: true },
     email: { type: String, required: true, unique: true },
     password: { type: String, required: true },
     isAdmin: {
@@ -19,10 +19,10 @@ const userSchema = new mongoose.Schema(
   { timestamps: true }
 );
 
-userSchema.pre("save", async function (next) {
-  let hashedPassword = await hashPassword(this.password);
-  this.password = hashedPassword;
-  next();
-});
+// userSchema.pre("save", async function (next) {
+//   let hashedPassword = await hashPassword(this.password);
+//   this.password = hashedPassword;
+//   next();
+// });
 
 module.exports = mongoose.model("User", userSchema);

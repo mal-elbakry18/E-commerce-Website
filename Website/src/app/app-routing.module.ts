@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { AuthGuard } from './auth.guard';
 import { AboutComponent } from './components/about/about.component';
 import { CartComponent } from './components/cart/cart.component';
 import { ContactPageComponent } from './components/contact-page/contact-page.component';
@@ -11,23 +12,25 @@ import { MensectionComponent } from './components/mensection/mensection.componen
 import { MyordersComponent } from './components/myorders/myorders.component';
 import { PoliciesComponent } from './components/policies/policies.component';
 import { ProductDetailsComponent } from './components/product-details/product-details.component';
+import { RegisterComponent } from './components/register/register.component';
 import { ShopComponent } from './components/shop/shop.component';
 import { WomensectionComponent } from './components/womensection/womensection.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
-  { path: 'home', component: HomeComponent},
-  { path: 'shop', component: ShopComponent},
+  { path: 'home', component: HomeComponent, canActivate:[AuthGuard]},
+  { path: 'shop', component: ShopComponent,canActivate:[AuthGuard]},
   { path: 'about', component: AboutComponent},
   { path: 'policies', component: PoliciesComponent},
   { path: 'contact', component: ContactPageComponent},
   { path: 'login', component: LoginComponent},
-  { path: 'myorders', component: MyordersComponent},
-  { path: 'favorites', component: FavoritesComponent},
-  { path: 'cart', component: CartComponent},
-  { path: 'menSection', component: MensectionComponent},
-  { path: 'womenSection', component: WomensectionComponent},
-  { path: 'product', component: ProductDetailsComponent},
+  { path: 'myorders', component: MyordersComponent,canActivate:[AuthGuard]},
+  { path: 'favorites', component: FavoritesComponent,canActivate:[AuthGuard]},
+  { path: 'cart', component: CartComponent,canActivate:[AuthGuard]},
+  { path: 'menSection', component: MensectionComponent, canActivate:[AuthGuard]},
+  { path: 'womenSection', component: WomensectionComponent, canActivate:[AuthGuard]},
+  { path: 'product', component: ProductDetailsComponent,canActivate:[AuthGuard]},
+  { path: 'register', component: RegisterComponent},
 ];
 
 @NgModule({
