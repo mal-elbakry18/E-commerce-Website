@@ -2,6 +2,8 @@ const express = require('express');
 const adminApp = require('./Routes/admin');
 const webApp = require('./Routes/web');
 const bodyParser = require('body-parser');
+const { InitController } = require('./Controllers/InitController');
+const initController = new InitController() 
 
 const app = express();
 const PORT = 8080;
@@ -15,7 +17,9 @@ app.use(bodyParser.json())
 
 app.use('/admin', adminApp);
 app.use('/web', webApp);
-app.use(bodyParser.json())
+
+
+app.post('/DatabaseInit', initController.checkDatabase);
 
 app.listen(PORT, () =>{
     console.log(`Listening on port ${PORT}`);

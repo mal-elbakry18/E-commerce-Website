@@ -11,7 +11,6 @@ document.addEventListener('click', e => {
 
 
 setInterval(function(){
-    
     bestSellerContainer.scrollBy({
         left: 200,
         behavior: 'smooth'
