@@ -53,15 +53,15 @@ const usersJson = {
 
 const productsJson = {
     products:[
-        {name : "shoes"  , price : 90.00, imageUrl : "/assets/pics/shoes1.webp"},
-        {name : "Glasses", price : 225.00, imageUrl : "/assets/pics/glasses1.webp"},
-        {name : "Hoodie" , price : 100.00, imageUrl : "/assets/pics/hoodie1.webp"},
-        {name : "Watch"  , price : 150.00, imageUrl : "/assets/pics/watch.webp"},
-        {name : "Plant"  , price : 85.00, imageUrl : "/assets/pics/plant1.webp"},
-        {name : "Frame"  , price : 75.00, imageUrl : "/assets/pics/frame1.webp"},
-        {name : "Perfume", price : 285.00, imageUrl : "/assets/pics/perfume1.webp"},
-        {name : "Scarf"  , price : 165.00, imageUrl : "/assets/pics/scarf1.webp"},
-        {name : "Lamp"   , price : 235.00, imageUrl : "/assets/pics/lamp1.webp"} 
+        {name : "shoes"  , price : 90.00, tag1 : "shoes1", gender : 0},
+        {name : "Glasses", price : 225.00, tag1 : "glasses1", gender : 0},
+        {name : "Hoodie" , price : 100.00, tag1 : "hoodie1", gender : 0},
+        {name : "Watch"  , price : 150.00, tag1 : "watch", gender : 0},
+        {name : "Plant"  , price : 85.00, tag1 : "plant1", gender : 1},
+        {name : "Frame"  , price : 75.00, tag1 : "frame1", gender : 1},
+        {name : "Perfume", price : 285.00, tag1 : "perfume1", gender : 1},
+        {name : "Scarf"  , price : 165.00, tag1 : "scarf1", gender : 1},
+        {name : "Lamp"   , price : 235.00, tag1 : "lamp1", gender : 1} 
     ]
 };
 async function initUsers(){

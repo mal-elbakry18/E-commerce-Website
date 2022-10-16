@@ -33,6 +33,9 @@ export class HomeComponent implements OnInit {
 
   public menList : any =[];
   public womenList : any=[];
+
+  public temp1 : number = 0;
+  public temp2 : number = 0;
   
   constructor(private api : ApiService) { }
 
@@ -42,11 +45,13 @@ export class HomeComponent implements OnInit {
       this.productList = res;
       this.filterCategory = res;
       this.productList.forEach((a:any) => {
-        if(a.gender === 0){
+        if(a.gender === 0 && this.temp1 < 3){
           this.menList.push(a);
+          this.temp1++;
           console.log("men");
-        }else if(a.gender === 1){
+        }else if(a.gender === 1 && this.temp2 < 3){
           this.womenList.push(a);
+          this.temp2++;
         }
         Object.assign(a,{quantity:1,total:a.price});
       });
