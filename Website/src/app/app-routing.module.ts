@@ -24,12 +24,9 @@ const routes: Routes = [
   { path: 'policies', component: PoliciesComponent},
   { path: 'contact', component: ContactPageComponent},
   { path: 'login', component: LoginComponent},
-  { path: 'myorders', component: MyordersComponent,canActivate:[AuthGuard]},
-  { path: 'favorites', component: FavoritesComponent,canActivate:[AuthGuard]},
   { path: 'cart', component: CartComponent,canActivate:[AuthGuard]},
   { path: 'menSection', component: MensectionComponent, canActivate:[AuthGuard]},
   { path: 'womenSection', component: WomensectionComponent, canActivate:[AuthGuard]},
-  { path: 'product', component: ProductDetailsComponent,canActivate:[AuthGuard]},
   { path: 'register', component: RegisterComponent},
 ];
 
