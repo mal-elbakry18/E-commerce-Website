@@ -11,6 +11,7 @@ import { ApiService } from 'src/app/services/api.service';
 export class RegisterComponent implements OnInit {
 
   register: any = FormGroup;
+  userN : string ="";
 
   constructor(private fb: FormBuilder, private router: Router, private api: ApiService) { }
 
@@ -27,11 +28,13 @@ export class RegisterComponent implements OnInit {
   registerSubmit(data:any){
     let sentData = {
       email: data.email,
-      password: data.password
+      password: data.password,
+      username: this.userN 
     }
-
+    this.userN += "00";
     this.api.addUser(sentData).subscribe((data:any)=>{
       console.log(data);
+      console.log(this.userN);
     })
   }
 
