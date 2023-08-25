@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Contact-Us</title>
+
+    <link rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="assets/stylesheets/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;1,200&family=Recursive:wght@300&family=Roboto:wght@300&family=Tillana:wght@600&display=swap" rel="stylesheet">
+</head>
+<body class="indexBody">
+    <header class="indexHeader">
+        <div class="logo fpoppins">
+           E-commerce Store
+        </div>
+        <div class="menu fpoppins">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="policies.html">Policies</a></li>                
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="about.html">About</a></li>
+                <li>
+                    <i class="fa fa-user-circle" id="userIcon" aria-hidden="true" data-Icon>
+                        <div class="userBar" id="userBar" data-Bar>
+                            <div class="userBarMenu fpoppins" data-Bar>
+                                <div class="menuLeft">
+                                    <a href="login.html" class="menuTags fpoppins">Login</a>
+                                    <a href="myOrders.html" class="menuTags fpoppins">My Orders</a>
+                                    <a href="favourites.html" class="menuTags fpoppins">Favorites</a>
+                                </div>
+                                <div class="menuRight">
+                                    <i class="fa fa-sign-in" aria-hidden="true"></i>
+                                    <i class="fas fa-box    "></i>
+                                    <i class="fa fa-heart" aria-hidden="true"></i>
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </i>
+                    
+                </li>
+                <li class="cartI"><a href="cart.html"><i class="fa-solid fa-bag-shopping fa-2x cart-icon"><span>0</span></i></a></li>
+            </ul>
+           
+            
+        </div>
+    </header>
+
+    <main class="indexMain">
+        <div class="contact">
+            <div class="leftOuter">
+                <div class="leftinner">
+                <h1 class="fpoppins">GIVE US A SHOUT</h1>
+                <h4 class="fpoppins">500 Terry Francois Street, 6th Floor. San Francisco, CA 94158</h4>
+                <h5 class="fpoppins">info@mysite.com</h5>
+                <h5 class="fpoppins">123-456-7890</h5>
+            </div>
+        </div>
+            
+            <div class="rightOuter">
+                <div class="rightInner">
+                    <form class="contactForm">
+                        <input type="text" name="Name" class="input w fpoppins seethrough" placeholder="Name">
+                        <input type="text" name="Address" class="input w fpoppins seethrough" placeholder="Address">
+                        <div class="rightinnercenter">
+                            <input type="email" name="Email" class="input n fpoppins seethrough" placeholder="Email">
+                            <input type="text" name="Phone" class="input n fpoppins seethrough" placeholder="Phone">
+                        </div>
+                        <input type="text" name="Subject" id="" class="input w fpoppins seethrough" placeholder="Subject">
+                        <textarea name="message" id="" cols="30" rows="10" class="seethrough"></textarea>
+                        <input type="submit" name="submit" id="submitBtn">
+                    </form>
+                </div>
+            </div>
+        </div>
+        <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3453.7358822402207!2d31.233521764593597!3d30.044434275529127!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x145840c623362e7d%3A0xede7c66693c5f18e!2sTahrir%20Square%2C%20Cairo%20Governorate!5e0!3m2!1sen!2seg!4v1659610884884!5m2!1sen!2seg" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        
+        <footer class="indexFooter">
+            <h2 class="fpoppins">E-COMMERCE STORE</h2>
+            <h4 class="fpoppins">info@mysite.com</h4>
+        </footer>
+    </main>
+    <script src="/assets/scripts/cart.js"></script>
+    <script src="assets/scripts/userBarScript.js"></script>
+</body>
+</html>

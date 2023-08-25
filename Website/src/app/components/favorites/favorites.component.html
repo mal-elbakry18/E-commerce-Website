@@ -1,0 +1,16 @@
+<body class="favoritesPage">
+    <div class="yourOrders fpoppins">
+        <h1>Products you liked</h1>
+    </div>
+
+    <div class="Scenter">
+
+        <div class="small-container">
+            <app-favorites-products *ngFor = "let item of favorites"
+            [productName] = "item.name" [productPrice] = "item.price" [productImage] = "item.imageURL"></app-favorites-products>
+        </div>
+        
+    </div>
+
+
+</body>

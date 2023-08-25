@@ -1,0 +1,35 @@
+<div class="Scenter shopPage">
+    
+    <div class="searchBar">
+        <input type="text" class="form-control" [(ngModel)]="searchTerm" (keyup)="search($event)" placeholder="search products">
+        <span class="fas fa-search search-icon"></span>
+    </div>
+
+
+    <div class="topShop">
+        <div class="item fpoppins">
+            <a (click)="filter(2)">
+                <img src="/assets/pics/allProducts.webp" alt="">
+                <h5>All products</h5>
+            </a>
+        </div>
+        <div class="item fpoppins">
+            <a (click)="filter(0)">
+                <img src="/assets/pics/mens.jpg" alt="">
+                <h5>Men Products</h5>
+            </a>
+        </div>
+        <div class="item fpoppins">
+            <a (click)="filter(1)">
+                <img src="/assets/pics/womens.jpg" alt="">
+                <h5>Women Products</h5>
+            </a>
+        </div>
+    </div>
+
+
+    <div class="small-container">
+        <app-featured-product *ngFor = "let item of filterCategory | filter:searchKey:'name'"
+        [productName] = "item.name" [productPrice] = "item.price" [productImage] = "item.tag1" [Item] = "item"></app-featured-product>     
+    </div>
+ </div>

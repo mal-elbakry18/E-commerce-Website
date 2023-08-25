@@ -1,0 +1,4 @@
+navigate to "E-commerce-Website\Backend - Api" and run "nodemon server.js" for the api
+navigate to "E:\Documents\GitHub\E-commerce-Website\Website\src" and run "ng serve"
+
+the project would bug out whenever we tried to build.. we are sorry for that.

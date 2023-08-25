@@ -1,0 +1,100 @@
+<body class="productPage">
+    
+
+<div class="url Poppins">
+    <a href="/home">Home</a>
+    <p>/</p>
+    <a href="/shop">Shop</a>
+    <p>/</p>
+    <p>I'm a Product</p>
+</div>
+
+<div class="Ppage productPage">
+
+<section class="product-details">
+    
+    <div class="main-img">
+        <img src="/assets/pics/hoodie1.webp">
+    </div>
+
+    <div class="images">
+
+        <div class="other-img">
+            <img src="/assets/pics/hoodie1.webp" onclick="changeImg(this.src)">
+        </div>
+
+        <div class="other-img">
+            <img src="/assets/pics/hoodie2.webp" onclick="changeImg(this.src)">
+        </div>
+
+        <div class="other-img">
+            <img src="/assets/pics/hoodie3.webp" onclick="changeImg(this.src)">
+        </div>
+
+    </div>
+
+    <div class="description">
+        <p class="fpoppins">I'm a product description. I'm a great place to add more details about your product such as sizing, material, care instructions and cleaning instructions.</p>
+    </div>
+
+</section>
+
+<section class="right-details">
+
+    <div class="product-name fpoppins">I'm a product</div>
+
+    <div class="star">
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+    </div>
+
+    <div class="product-name fpoppins">EGP 85,00</div>
+
+    <div class="product-size">
+        <p>Size: </p>
+            
+        <input type="radio" name="size" value="s" checked hidden id="s-size">
+        <label for="s-size" class="size-radio-btn">s</label>
+        <input type="radio" name="size" value="m" hidden id="m-size">
+        <label for="m-size" class="size-radio-btn">m</label>
+        <input type="radio" name="size" value="l" hidden id="l-size">
+        <label for="l-size" class="size-radio-btn">l</label>
+        <input type="radio" name="size" value="xl" hidden id="xl-size">
+        <label for="xl-size" class="size-radio-btn">xl</label>
+        <input type="radio" name="size" value="xxl" hidden id="xxl-size">
+        <label for="xxl-size" class="size-radio-btn">xxl</label>
+     </div>
+
+    <div class="product-color">
+        <p>Color: </p>
+        <input type="radio" name="color" value="g" hidden id="g-color" >
+        <label for="g-color" class="Pcolor" style="background-color: Gray ;" title="Gray"></label>
+        <input type="radio" name="color" value="b" hidden id="b-color">
+        <label for="b-color" class="Pcolor" style="background-color: Black ;" title="Black"></label>
+        <input type="radio" name="color" value="w" hidden id="w-color">
+        <label for="w-color" class="Pcolor" style="background-color: White ;" title="White"></label>
+    </div>
+
+    <div class="product-quantity">
+        <p>Quantity: </p>
+        <input type="number" min="1" max="5" value="1">
+    </div>
+
+    <div class="add-btn">
+        <button>Add to Cart</button>
+    </div>
+    <div class="add-btn-fav">
+        <button>Add to Favorites
+            <i class="fa-solid fa-heart"></i>
+        </button>
+    </div>
+
+
+</section>
+
+</div>
+
+</body>

@@ -1,0 +1,19 @@
+<body id="loginBody" class="fpoppins">
+    <body class="loginMain">
+        <h1>Welcome to <br><span>E-COMMERCE</span><br>Store</h1>
+        <p class="par fpoppins">Our passion for excellence has driven us from the beginning, and continues to drive us into the future.<br>
+            Check out our store and special offers, and get in touch with questions or requests.</p>
+        <button class="loginLearnMore"><a href="#">Learn More</a></button>
+
+
+        <div class="login-form" [formGroup]="register">
+            <h2>Register new Account</h2>
+            <input type="email" name="email" placeholder="Enter your new email here" formControlName="email">
+            <input type="password" name="" placeholder="Enter your new password here" formControlName="password">
+            <button class="login-btn" (click)="registerSubmit(register.value)" [disabled]="register.invalid">Register</button>
+            
+            <p class="login-link">Already have an account?<br>
+            <a routerLink="/login">Login</a></p>
+            
+    </div>
+</body>
